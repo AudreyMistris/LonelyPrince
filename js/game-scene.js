@@ -12,7 +12,9 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
-        this.add.image(0, 0, 'room');
+        const LARGURA_JOGO = this.sys.canvas.width;
+        const ALTURA_JOGO = this.sys.canvas.height;
+        this.add.image(LARGURA_JOGO, ALTURA_JOGO, 'room');
         
         this.player = new Player(this);
 
