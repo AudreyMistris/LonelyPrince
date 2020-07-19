@@ -6,7 +6,10 @@ export default class LoadingScene extends Phaser.Scene {
     }
 
     preload() {
-
+        this.load.image();
+        this.load.music();
+        this.load.sound();
+        this.load.spritesheet();
     }
 
     create() {
