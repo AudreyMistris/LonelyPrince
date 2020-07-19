@@ -12,6 +12,8 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
+        this.add.image(0, 0, 'room');
+        
         this.player = new Player(this);
 
         this.teclas = this.input.keyboard.createCursorKeys();
