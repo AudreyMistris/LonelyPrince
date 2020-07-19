@@ -1,24 +1,23 @@
-var config = {
+import LoadingScene from './loading-scene.js';
+import GameScene from './game-scene.js';
+
+const CONFIG = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    scene: {
-        preload: preload,
-        create: create,
-        update: update
-    }
+    parent: 'jogo-wip',
+    
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: {
+                y: 100
+            },
+            debug: true
+        }
+    },
+    
+    scene: [LoadingScene, GameScene]
 };
 
-var game = new Phaser.Game(config);
-
-function preload ()
-{
-}
-
-function create ()
-{
-}
-
-function update ()
-{
-}
+const JOGO = new Phaser.Game(CONFIG);
