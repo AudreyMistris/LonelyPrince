@@ -3,8 +3,8 @@ import GameScene from './game-scene.js';
 
 const CONFIG = {
     type: Phaser.AUTO,
-    width: 400,
-    height: 300,
+    width: 549,
+    height: 360,
     parent: 'jogo-wip',
     
     physics: {
