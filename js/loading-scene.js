@@ -8,7 +8,7 @@ export default class LoadingScene extends Phaser.Scene {
     preload() {
         const LARGURA_JOGO = this.sys.canvas.width;
         const PROGRESS_BAR = this.add.graphics();
-        const LARGURA_BARRA = 0.8 * LARGURA_JOGO;
+        const LARGURA_BARRA = 0.7 * LARGURA_JOGO;
         
         this.load.on('progress', (value) => {
             PROGRESS_BAR.clear();
@@ -23,8 +23,11 @@ export default class LoadingScene extends Phaser.Scene {
         });
         
         this.load.image('room', 'lenda-do-heroi.png');
-        this.load.image('floor', 'floor.png');
-        this.load.image('platform', 'platform.png');
+        this.load.image('floor1', 'floor1.png');
+        this.load.image('floor2', 'floor2C.png');
+        this.load.image('floor3', 'floor3.png');
+        this.load.image('platforminha', 'platformB_1x3.png');
+        this.load.image('platform', 'platformB_1x6.png');
         // this.load.music();
         // this.load.sound();
         this.load.spritesheet('sprite', 'eskimo_girl.png', { frameWidth: 24, frameHeight: 24 });
