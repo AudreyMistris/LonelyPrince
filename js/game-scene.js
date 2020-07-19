@@ -18,6 +18,22 @@ export default class GameScene extends Phaser.Scene {
         const IMG_BACKGROUND = this.add.image(0, 0, 'room');
         IMG_BACKGROUND.setOrigin(0, 0);
         
+        const PLATAFORMAS = this.physics.add.staticGroup();
+        PLATAFORMAS.create(82, 360 - 100 - 20, 'platform').setOrigin(0, 0).refreshBody();
+        PLATAFORMAS.create(82 - 20, 360 - 100 - 20 * 2, 'platform').setOrigin(0, 0).refreshBody();
+        PLATAFORMAS.create(82 - 20 * 3, 360 - 100 - 20 * 3, 'platform').setOrigin(0, 0).refreshBody();
+
+        PLATAFORMAS.create(266, 360 - 61 - 20, 'platform').setOrigin(0, 0).refreshBody();
+        PLATAFORMAS.create(266 - 20 * 2, 360 - 61 - 20 * 2, 'platform').setOrigin(0, 0).refreshBody();
+
+        PLATAFORMAS.create(465 + 45, 360 - 61 - 20 * 2, 'platform').setOrigin(0, 0).refreshBody();
+
+        PLATAFORMAS.create(134, 360 - 220 - 20, 'platforminha').setOrigin(0, 0).refreshBody();
+
+        PLATAFORMAS.create(0, 170, 'floor1').setOrigin(0, 0).refreshBody();
+        PLATAFORMAS.create(0, 260, 'floor2').setOrigin(0, 0).refreshBody();
+        PLATAFORMAS.create(0, 300, 'floor3').setOrigin(0, 0).refreshBody();
+        
         this.player = new Player(this);
 
         this.teclas = this.input.keyboard.createCursorKeys();
