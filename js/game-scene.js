@@ -29,7 +29,8 @@ export default class GameScene extends Phaser.Scene {
         PLATAFORMAS.create(465 + 45, 360 - 61 - 20 * 2, 'platform').setOrigin(0, 0).refreshBody();
 
         PLATAFORMAS.create(134, 360 - 220 - 20, 'platforminha').setOrigin(0, 0).refreshBody();
-
+        PLATAFORMAS.create(465, 360 - 20, 'platform').setOrigin(0, 0).refreshBody();
+        
         PLATAFORMAS.create(0, 170, 'floor1').setOrigin(0, 0).refreshBody();
         PLATAFORMAS.create(0, 260, 'floor2').setOrigin(0, 0).refreshBody();
         PLATAFORMAS.create(0, 300, 'floor3').setOrigin(0, 0).refreshBody();
