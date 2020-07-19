@@ -20,4 +20,4 @@ const CONFIG = {
     scene: [LoadingScene, GameScene]
 };
 
-const JOGO = new Phaser.Game(CONFIG);
+const GAME = new Phaser.Game(CONFIG);
