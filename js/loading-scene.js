@@ -30,7 +30,7 @@ export default class LoadingScene extends Phaser.Scene {
         this.load.image('platform', 'platformB_1x6.png');
         this.load.audio('theme', 'empty-town.mp3');
         // this.load.sound();
-        this.load.spritesheet('sprite', 'ralsei.png', { frameWidth: 39, frameHeight: 50 });
+        this.load.spritesheet('sprite', 'ralsei.png', { frameWidth: 38.5, frameHeight: 50 });
     }
 
     create() {
