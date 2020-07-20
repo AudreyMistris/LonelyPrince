@@ -3,7 +3,7 @@ export default class Player {
         this.scene = scene;
         this.sprite = scene.physics.add.sprite(10, 100, 'sprite');
         this.sprite.body.setSize(59, 118);
-        // this.sprite.setBounce(0.2); // provavelmente a retirar
+        this.sprite.setScale(0.5);
         this.sprite.setCollideWorldBounds(true);
         
         scene.anims.create({
@@ -23,7 +23,7 @@ export default class Player {
         scene.anims.create({
             key: 'right',
             frames: scene.anims.generateFrameNumbers('sprite', { start: 8, end: 11 }),
-            frameRate: 20,
+            frameRate: 10,
             repeat: -1
         });
 
