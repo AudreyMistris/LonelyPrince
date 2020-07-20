@@ -5,7 +5,7 @@ const CONFIG = {
     type: Phaser.AUTO,
     width: 549,
     height: 360,
-    parent: 'jogo-wip',
+    parent: 'jogo-sad-one',
     
     physics: {
         default: 'arcade',
