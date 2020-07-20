@@ -18,6 +18,12 @@ export default class GameScene extends Phaser.Scene {
         const IMG_BACKGROUND = this.add.image(0, 0, 'room');
         IMG_BACKGROUND.setOrigin(0, 0);
         
+        const BGM = this.sound.add('theme', {
+            volume: 0.2,
+            loop: true
+        });
+        BGM.play();
+        
         const PLATAFORMAS = this.physics.add.staticGroup();
         PLATAFORMAS.create(82, 360 - 100 - 20, 'platform').setOrigin(0, 0).refreshBody();
         PLATAFORMAS.create(82 - 20, 360 - 100 - 20 * 2, 'platform').setOrigin(0, 0).refreshBody();
