@@ -30,7 +30,7 @@ export default class LoadingScene extends Phaser.Scene {
         this.load.image('platform', 'platformB_1x6.png');
         // this.load.music();
         // this.load.sound();
-        this.load.spritesheet('sprite', 'eskimo_girl.png', { frameWidth: 24, frameHeight: 24 });
+        this.load.spritesheet('sprite', 'sad-one.png', { frameWidth: 59, frameHeight: 118 });
     }
 
     create() {
