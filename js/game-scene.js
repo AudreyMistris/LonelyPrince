@@ -36,7 +36,7 @@ export default class GameScene extends Phaser.Scene {
         PLATAFORMAS.create(0, 300, 'floor3').setOrigin(0, 0).refreshBody();
         
         this.player = new Player(this);
-
+        this.physics.add.collider(this.player.sprite, PLATAFORMAS);
         this.teclas = this.input.keyboard.createCursorKeys();
     }
 
